@@ -6,12 +6,13 @@
 package reto0dintxt;
 
 /**
- * Main class of the application
+ * application class
  * @author Bryssa
  */
 public class Application {
 
     /**
+     * Main class of aplication
      * @param args the command line arguments
      */
     public static void main(String[] args) {

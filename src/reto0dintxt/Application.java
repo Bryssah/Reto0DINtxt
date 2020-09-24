@@ -12,7 +12,7 @@ package reto0dintxt;
 public class Application {
 
     /**
-     * Main class of aplication
+     * Main class of application
      * @param args the command line arguments
      */
     public static void main(String[] args) {

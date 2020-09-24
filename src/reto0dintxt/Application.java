@@ -6,7 +6,7 @@
 package reto0dintxt;
 
 /**
- *
+ * Main class of the application
  * @author Bryssa
  */
 public class Application {

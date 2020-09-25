@@ -5,10 +5,20 @@
  */
 package reto0dintxt.controller;
 
+import reto0dintxt.model.Model;
+import reto0dintxt.view.View;
+
 /**
- *
+ * Controller class of the application
  * @author Aingeru
  */
 public class Controller {
-    
+    /**
+     * Run the view with the model
+     * @param view Interface
+     * @param model Interface
+     */
+    public void run(View view, Model model){
+        view.showGreeting(model.getGreeting());
+    }
 }

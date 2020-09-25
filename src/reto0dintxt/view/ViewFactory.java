@@ -6,9 +6,16 @@
 package reto0dintxt.view;
 
 /**
- *
+ * The factory class of the View implementation
  * @author Bryssa
  */
 public class ViewFactory {
-    
+    /**
+     * Returns a new implementation of the view
+     * @return a new implementation
+     */
+    public View getView(){
+        return new ViewImplementation();
+        
+    }
 }

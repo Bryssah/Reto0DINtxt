@@ -8,6 +8,7 @@ package reto0dintxt.model;
 /**
  * The factory  class of the Model Implementation
  * @author Aingeru
+ * @author Bryssa
  */
 public class ModelFactory {
     /**

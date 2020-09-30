@@ -11,6 +11,7 @@ import reto0dintxt.view.View;
 /**
  * Controller class of the application
  * @author Aingeru
+ * @author Bryssa
  */
 public class Controller {
     /**

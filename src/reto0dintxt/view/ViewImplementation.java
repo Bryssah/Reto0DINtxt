@@ -8,6 +8,7 @@ package reto0dintxt.view;
 /**
  *  Implementation of the view that shows a text message
  * @author Bryssa
+ * @author Aingeru
  */
 public class ViewImplementation implements View {
     /**

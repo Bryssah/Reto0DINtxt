@@ -8,6 +8,7 @@ package reto0dintxt.view;
 /**
  * Declares the metod/s of the view
  * @author Bryssa
+ * @author Aingeru
  */
 public interface View {
     /**

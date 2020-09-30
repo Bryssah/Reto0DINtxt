@@ -10,5 +10,9 @@ package reto0dintxt.model;
  * @author Aingeru
  */
 public interface Model {
+    /**
+     * Gets the greeting message
+     * @return the greeting in a String
+     */
     public String getGreeting();
 }

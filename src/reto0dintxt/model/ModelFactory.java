@@ -6,9 +6,15 @@
 package reto0dintxt.model;
 
 /**
- *
+ * The factory  class of the Model Implementation
  * @author Aingeru
  */
 public class ModelFactory {
-    
+    /**
+     * Returns a new implementation of the model
+     * @return a new implementation
+     */
+    public Model getModel(){
+        return new ModelImplementation();
+    }
 }

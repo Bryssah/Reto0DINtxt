@@ -5,17 +5,26 @@
  */
 package reto0dintxt;
 
+import reto0dintxt.controller.Controller;
+import reto0dintxt.model.ModelFactory;
+import reto0dintxt.view.ViewFactory;
+
 /**
- * Main class of the application
+ * Application class
+ * This applicagtion gets a greeting from a file and shows it trought command line
  * @author Bryssa
  */
 public class Application {
 
     /**
+     * Main class of application
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ModelFactory model = new ModelFactory();
+        ViewFactory view = new ViewFactory();
+        Controller con = new Controller();
+        con.run(view.getView(),model.getModel());
     }
     
 }

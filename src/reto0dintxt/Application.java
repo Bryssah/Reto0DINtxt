@@ -17,19 +17,12 @@ import reto0dintxt.view.ViewFactory;
  * @author Aingeru
  */
 public class Application {
-
-    
    
     /**
-     * Main class of application
+     * Main class of application wich takes an argument when it launchs
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        /*for(int i = 0; i<args.length;i++){
-            System.out.println("Argumento:" + args[0]);
-            
-        }*/
         if(args.length>1 || args.length<1){
             System.out.println("This Java application needs only 1 argument");
         }else if(args[0].equalsIgnoreCase("txt")){

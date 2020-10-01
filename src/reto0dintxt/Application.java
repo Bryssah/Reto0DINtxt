@@ -26,17 +26,30 @@ public class Application {
      */
     public static void main(String[] args) {
         
-          ModelFactory model = new ModelFactory();
-        ViewFactory view = new ViewFactory();
-        Controller con = new Controller();
-        con.run(view.getView(),model.getModel());
+        /*for(int i = 0; i<args.length;i++){
+            System.out.println("Argumento:" + args[0]);
+            
+        }*/
+        if(args.length>1 || args.length<1){
+            System.out.println("This Java application needs only 1 argument");
+        }else if(args[0].equalsIgnoreCase("txt")){
+            //TXT MODE
+            ModelFactory model = new ModelFactory();
+            ViewFactory view = new ViewFactory();
+            Controller con = new Controller();
+            con.run(view.getView(),model.getModel());
+        }else if(args[0].equalsIgnoreCase("gui")){
+            // GRAPHIC MODE
+            ModelFactory model = new ModelFactory();
+            ViewFactory view = new ViewFactory();
+            Controller con = new Controller();
+            con.run(view.getSwingView(),model.getModel());
+        }else{
+            System.out.println("Launch this Java application with 'txt' or 'gui' as arguments.");
+        }
          
-        // GRAPHIC MODE
-         /** ModelFactory model = new ModelFactory();
-        ViewFactory view = new ViewFactory();
-        Controller con = new Controller();
-        con.run(view.getSwingView(),model.getModel());
-       **/
+        
+       
     }
     
 }

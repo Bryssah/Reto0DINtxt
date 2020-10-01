@@ -8,6 +8,7 @@ package reto0dintxt.view;
 /**
  * The factory class of the View implementation
  * @author Bryssa
+ * @author Aingeru
  */
 public class ViewFactory {
     /**
@@ -17,5 +18,9 @@ public class ViewFactory {
     public View getView(){
         return new ViewImplementation();
         
+    }
+    
+    public View getSwingView(){
+        return new SwingViewImplementation();
     }
 }

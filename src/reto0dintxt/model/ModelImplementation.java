@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 /**
  * Implementation of the model that gets a text message
  * @author Aingeru
+ * @author Bryssa
  */
 public class ModelImplementation implements Model{
     /**

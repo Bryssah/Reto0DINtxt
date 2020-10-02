@@ -13,13 +13,20 @@ import java.util.ResourceBundle;
  * @author Bryssa
  */
 public class ModelImplementation implements Model{
+    private static Dao dao = new Dao();
+    
     /**
      * Gets a greeting message
      * @return the greeting in a String
      */
     @Override
     public String getGreeting(){
-        return ResourceBundle.getBundle("reto0dintxt.model.ModelFile")
+        //DB metod
+        return dao.getGreeting();
+        
+        //Properties file metod
+        /*return ResourceBundle.getBundle("reto0dintxt.model.ModelFile")
                 .getString("greeting");
+        */
     }
 }

@@ -6,7 +6,7 @@
 package reto0dintxt.model;
 
 /**
- * Declares the metod/s of the model
+ * Declares the method/s of the model
  * @author Aingeru
  * @author Bryssa
  */

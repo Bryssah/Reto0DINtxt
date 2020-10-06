@@ -19,7 +19,6 @@ public class ModelImplementation implements Model{
      */
     @Override
     public String getGreeting(){
-        return ResourceBundle.getBundle("reto0dintxt.model.ModelFile")
-                .getString("greeting");
+        return ResourceBundle.getBundle("reto0dintxt.model.ModelFile").getString("greeting");
     }
 }

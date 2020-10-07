@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 public class DBModelImplementation implements Model{
 
     private Connection con = null;
-    private PreparedStatement stat = null;
+    private Statement stat = null;
     private ResourceBundle configFile = null;
     private String driverBD = "";
     private String urlBD = "";
@@ -77,16 +77,16 @@ public class DBModelImplementation implements Model{
         this.openConnection();
         try {
 
-           Statement s = con.createStatement();
-            s.executeQuery(getGreeting);
-            ResultSet rs = s.getResultSet();
+            stat = con.createStatement();
+            stat.executeQuery(getGreeting);
+            ResultSet rs = stat.getResultSet();
 
             while (rs.next()) {
                 text = rs.getString("greeting");
             }
 
             rs.close();
-            s.close();
+            this.closeConnection();
         } catch (SQLException e) {
             e.printStackTrace();
         }

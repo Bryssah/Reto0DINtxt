@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
  * @author Bryssa
  */
 public class ModelImplementation implements Model{
+    
     /**
      * Gets a greeting message
      * @return the greeting in a String
